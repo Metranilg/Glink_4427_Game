@@ -6,9 +6,21 @@
 1) Простой: Найти папку Game и в ней найти файл с форматом расширения .exe и начать играть
 2) Сложнее: загрузить проект из папки RogueLike_1 в Visual Studio и установить в свойствах проекта следующее:
     в C/C++ - общие - дополнительные катологи включения:
-    нужно указать пути к файлам лежащим в папке с проектом, а именно к (\imgui-master\imgui-master) (\imgui-master\imgui-master\backends) (\glm-master.zip\glm-master\glm) (\glad\include)
+    нужно указать пути к дополнительным библиотекам ирасширениям, а именно к
+   (\imgui-master\imgui-master)             https://github.com/ocornut/imgui
+   (\imgui-master\imgui-master\backends)
    
-    Длаее: компоновщик - общие - дополнительные каталогибиблиотек: (\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2019)
+   (\glm-master.zip\glm-master\glm)         https://github.com/g-truc/glm
+   
+   (\glad\include)                          https://glad.dav1d.de/
+                                                На сайте выбрать:
+                                                Language: C/C++
+                                                Specification: OpenGL
+                                                API: OpenGL версию, например 3.3 или 4.6.
+                                                Profile: Core
+   
+    Длаее: компоновщик - общие - дополнительные каталогибиблиотек:
+   (\glfw-3.4.bin.WIN64\glfw-3.4.bin.WIN64\lib-vc2019)  https://www.glfw.org/download.html
    
     Далее проверить: компоновщик - ввод - дополнительные зависимости:
     glfw3.lib
